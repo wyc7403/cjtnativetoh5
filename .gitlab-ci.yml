@@ -1,0 +1,13 @@
+stages:
+  - publish
+
+publish_to_registry:
+  tags:
+    - chengdu
+  when: on_success
+  stage: publish
+  script:
+    - npm config set "@gnpm:registry" https://git.i-school.net:8032/api/v4/projects/${CI_PROJECT_ID}/packages/npm/
+    - npm config set //git.i-school.net:8032/api/v4/packages/npm/:_authToken ${CI_JOB_TOKEN}
+    - npm config set //git.i-school.net:8032/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken ${CI_JOB_TOKEN}
+    - npm publish

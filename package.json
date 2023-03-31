@@ -1,0 +1,31 @@
+{
+  "name": "cjtnativetoh5",
+  "type": "module",
+  "version": "1.1.35",
+  "description": "",
+  "main": "./src/native.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangyingchao",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.4",
+    "@babel/node": "^7.15.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/runtime": "^7.11.2",
+    "@babel/runtime-corejs3": "^7.11.2",
+    "babel-loader": "^8.1.0",
+    "compression-webpack-plugin": "^6.1.1",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^4.5.0",
+    "jquery": "^3.6.0",
+    "terser-webpack-plugin": "^5.2.3",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
